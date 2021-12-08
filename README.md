@@ -14,7 +14,7 @@
 下面是更详细的解释。
 首先，在每个岁数有一个事件列表，不同的事件有不同的权重。在每个岁数，游戏根据权重随机的选择一个事件。比如在31岁，幸运和不幸都不常见（0.03），平凡而普通才是正常生活
 
-![eents_at_31](/assets/images/2021-12-07-life-restart-analysis/2021-12-07-23-41-22.png)
+![eents_at_31](https://anselmwang.github.io/assets/images/2021-12-07-life-restart-analysis/2021-12-07-23-41-22.png)
 
 **每一局游戏，同一个年龄，不管是谁，都共享相同的事件列表，这告诉我：大部分人在重复相似的人生，每个年龄自有该发生的事情，时间的洪流将我们卷向未来。**
 
@@ -38,9 +38,9 @@
 除了属性外，一个事件的发生也会影响未来的事件。下面是我在demo中发现的有趣关系。
 比如下图，“你进入流水线工厂工作”的一个前提(观察include)事件是“高考，你考上了专科”，而该事件的前提是：智力<6并且发生过事件”中考考的一般，上了县里的高中”。而当你考上一般高中时，无数的可能性对你关闭了（观察exclude部分），你不会“辍学打工，补贴家用”
 
-![enter_factory](/assets/images/2021-12-07-life-restart-analysis/2021-12-07-23-45-57.png)
+![enter_factory](https://anselmwang.github.io/assets/images/2021-12-07-life-restart-analysis/2021-12-07-23-45-57.png)
 
 另一个例子如下，大家自己看看“你成为了世界首富”的可行路径吧。另外，effect_dict里面指出，成为世界首富，会给你增加1点快乐(SPR)。
-![be_richest](/assets/images/2021-12-07-life-restart-analysis/2021-12-07-23-47-00.png)
+![be_richest](https://anselmwang.github.io/assets/images/2021-12-07-life-restart-analysis/2021-12-07-23-47-00.png)
 
 **在游戏的人生模型中，人生的每一年，并不是条件独立的采样过程，而是具有长程依赖关系的随机过程。**

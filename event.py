@@ -72,7 +72,7 @@ class EventData:
                         branches.append(branch_str)
                 others = {}
                 for key, value in record.items():
-                    if key in ("$id", "postEvent", "include", "exclude"):
+                    if key in ("$id", "event", "postEvent", "include", "exclude"):
                         continue
                     if key.startswith("branch[") or key.startswith("effect:"):
                         continue
